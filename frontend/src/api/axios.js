@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000",
+ baseURL: "https://lead-management-dashboard-1.onrender.com",
 });
 
 api.interceptors.request.use((config) => {

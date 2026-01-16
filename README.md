@@ -13,7 +13,7 @@ This app includes:
 ---
 
 ## 🚀 Live Demo
-- Frontend: <PASTE_FRONTEND_DEPLOYED_URL_HERE>
+- Frontend: https://lead-management-dashboard-lemon.vercel.app
 
 ### ✅ Demo Credentials
 - Email: `admin@gmail.com`
