@@ -9,7 +9,17 @@ const authRoutes = require("./src/routes/auth.routes"); // ✅ NEW
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://lead-management-dashboard-lemon.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 app.get("/", (req, res) => res.send("✅ Lead Dashboard API running"));
