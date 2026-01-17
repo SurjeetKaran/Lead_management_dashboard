@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import LeadDetails from "./pages/LeadDetails";
 import { isLoggedIn } from "./utils/auth";
+import Signup from "./pages/Signup";
 
 const PrivateRoute = ({ children }) => {
   return isLoggedIn() ? children : <Navigate to="/" />;
@@ -29,6 +30,9 @@ export default function App() {
             </PrivateRoute>
           }
         />
+
+        <Route path="/signup" element={<Signup />} />
+
       </Routes>
     </BrowserRouter>
   );
